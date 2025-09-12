@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #210d00, #210d00);
+  color: #ffa8cb;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fffdb5;
+  letter-spacing: 2px;
+}
+
+/* Row Layout */
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.card {
+  background: #2a0f03;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 168, 203, 0.4);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.5rem;
+  color: #fffdb5;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffa8cb;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Skills */
+.skill {
+  margin-bottom: 15px;
+}
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+progress {
+  width: 100%;
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  appearance: none;
+}
+progress::-webkit-progress-bar {
+  background: #4d1f10;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #ff96c9, #fffdb5);
+  border-radius: 10px;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(90deg, #ff96c9, #fffdb5);
+  border-radius: 10px;
+}
+
+/* Experiences */
+.exp {
+  line-height: 1.8;
+}
+.heart {
+  color: #fffdb5;
+  margin-right: 5px;
+}
+
+/* Back Home Button - fixed bottom */
+.back-home {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #210d00;
+  background: linear-gradient(90deg, #ff96c9, #fffdb5);
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255,168,203,0.6);
+}
+
